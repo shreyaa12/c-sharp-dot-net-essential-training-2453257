@@ -15,11 +15,13 @@ decimal val2 = 1234.5678m;
 
 
 // TODO: Add a number after the format to specify precision
+// Console.WriteLine($"Formatted numbers {val1:D6},{val1:N2},{val1:G3},{val1:F1}");
+// Console.WriteLine($"{val2:E},{val2:N},{val2:G},{val2:F}");
 
 
 // TODO: Formatting with alignment and spacing
-// Console.WriteLine("Sales by Quarter:");
-// Console.WriteLine($"{quarters[0]} {quarters[1]} {quarters[2]} {quarters[3]}");
-// Console.WriteLine($"{sales[0]} {sales[1]} {sales[2]} {sales[3]}");
-// Console.WriteLine("International Sales:");
-// Console.WriteLine($"{intlMixPct[0]} {intlMixPct[1]} {intlMixPct[2]} {intlMixPct[3]}");
+Console.WriteLine("Sales by Quarter:");
+Console.WriteLine($"{quarters[0],10} {quarters[1],12} {quarters[2],12} {quarters[3],12}");
+Console.WriteLine($"{sales[0],12:C0} {sales[1],12:C0} {sales[2],12:C0} {sales[3],12:C0}");
+Console.WriteLine("International Sales:");
+Console.WriteLine($"{intlMixPct[0],12:P0} {intlMixPct[1],12:P0} {intlMixPct[2],12:P1} {intlMixPct[3],12:P2}");
