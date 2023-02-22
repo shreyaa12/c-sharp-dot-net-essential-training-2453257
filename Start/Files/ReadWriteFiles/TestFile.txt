@@ -1,0 +1,3 @@
+This is a text!
+This is to append text
+Stream writer used 
